@@ -49,7 +49,7 @@ const arcsData = destinations.map(dest => ({
 // 5. Initialisation du Globe
 const myGlobe = Globe()
     (document.getElementById('globe-container'))
-    .globeImageUrl('assets/world-map-v2.jpeg') // Utilise ton image JPEG personnalisée
+    .globeImageUrl('assets/world-map-v3.jpeg') // Utilise ton image JPEG personnalisée
     .backgroundColor('#000000') 
     
     // Halo atmosphérique cyan
@@ -81,4 +81,6 @@ globeMaterial.emissiveIntensity = 0.2;
 globeMaterial.shininess = 0.9;
 
 // 7. Vue initiale et rotation automatique
-myGlobe.pointOfView({ lat: 40.0, lng: -95.
+myGlobe.pointOfView({ lat: 40.0, lng: -95.0, altitude: 2.2 }, 1000);
+myGlobe.controls().autoRotate = true;
+myGlobe.controls().autoRotateSpeed = 0.6;
