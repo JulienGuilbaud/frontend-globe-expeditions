@@ -33,7 +33,7 @@ const myGlobe = Globe()
     (document.getElementById('globe-container'))
     
     // Chemin local vers l'image téléchargée
-    .globeImageUrl('./assets/shopify-map.png')
+    .globeImageUrl('./assets/world-map.webp')
     
     .backgroundColor('rgba(0,0,0,0)')
     
